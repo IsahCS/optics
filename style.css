@@ -1,0 +1,117 @@
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.degree{
+    height: 40px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, #ffffff 50%, #0d6efd 30%, #0853c5);
+    border: 20px solid #425d86;
+
+}
+
+.container0{
+    border: solid 1px;
+    width: 42%;
+    height: 230px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0px 10px -5px;
+    border-color: #ffffff;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#comecar{
+    width: 35%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#resultado{
+    border: solid 1px;
+    width: 42%;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0px 10px -5px;
+    border-color: #ffffff;
+    background-color: white;
+    margin-top: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-select{
+    width: 40% !important;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+@media only screen and (max-width: 1090px) {
+    .container0{
+        width: 65%;
+    }
+    #resultado{
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 716px) {
+    .container0{
+        width: 85%;
+    }
+    #comecar{
+        width: 84%;
+    }
+    #resultado{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .container0{
+        height: 53%;
+    }
+    .container-1{
+        flex-direction: column ;
+        align-items: center;
+        margin: 0;
+    }
+    .container-2{
+        flex-direction: column ;
+        align-items: center;
+    }
+    #resultado{
+        width: 85%;
+    }
+    .form-select{
+        margin-bottom: 5px;
+        width: 84% !important
+    }
+}
